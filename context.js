@@ -18,19 +18,19 @@ console.log(a); // 1
 // =====================================
 
 let b = 1;
-function outer1() {
+function outside() {
   console.log(b); // 1
 
-  function inner1() {
+  function inside() {
     console.log(b); // 1
     b = 3;
   }
 
-  inner1();
+  inside();
 
   console.log(b); // 3
 }
-outer1();
+outside();
 console.log(b); // 3
 
 //여기서 let은 한번 변수의 이름을 b라고 선언 하면 같은 다시 b를 선언 할 수 없다 그래서 b = 3 이라고 값을 변경 해주면 앞으로 b는 3이라는 값이 입력되어서 31번째 줄, 34번째 줄에 3이라는 결과를 얻는다
