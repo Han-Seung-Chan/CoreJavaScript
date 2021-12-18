@@ -1,8 +1,8 @@
-/*기본적으로는 함스의 this와 같다 (전역객체를 가르킨다)
+/*기본적으로는 함수의 this와 같다 (전역객체를 가르킨다)
 제어권을 가진 함수가 콜백의 this를 지정해둔 경우도 있다 (지정해둔 this를 가르킨다)
 this를 바인딩해서 콜백함수에 넘기면 this는 전역객체를 가르키지 않는다*/
 const callback = function () {
-  //console.log(this); // global
+  console.log(this); // global
 };
 
 const obj = {
